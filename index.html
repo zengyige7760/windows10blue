@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -156,8 +156,9 @@
         </div>
         
         <div class="qr-section">
-            <div class="qr-code"></div>
-            更多信息 > 
+            <p style="color: black; text-align: center; margin: 0 0 5px 0;">扫描二维码获取帮助</p>
+            <!-- 真实二维码，指向微软支持页面 -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://support.microsoft.com/zh-cn/windows" alt="微软支持二维码">
         </div>
         
         <div class="progress-container">
@@ -243,10 +244,7 @@
                     e.preventDefault();
                 }
                 
-                // 阻止F11退出全屏
-                if (e.key === 'F11') {
-                    e.preventDefault();
-                }
+
             });
             
             // 阻止退出全屏
